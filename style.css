@@ -212,7 +212,7 @@ section.sobre .flex {
   text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -221,6 +221,7 @@ section.sobre .flex {
   font-size: 22px;
   cursor: pointer;
   margin: 0 5px;
+  transition: .2s;
 }
 
 /* ESTILO DO PORTFÓLIO */
@@ -322,4 +323,41 @@ form .btn-enviar input {
 form .btn-enviar input:hover {
   box-shadow: 0px 0px 8px #a3d7f3;
   transform: scale(1.05);
+}
+
+/* ESTILO DO FOOTER */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px #ffffff1d;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+.borda {
+  border-top: 2px solid #8ab9d3;
+}
+
+footer .line-footer p i{
+  color: #8ab9d3;
+  font-size: 22px;
+}
+
+footer .line-footer p a {
+  color: #fff;
+}
+
+footer .line-footer p {
+  color: #fff;
+}
+
+footer .copyright p {
+  font-style: italic;
+  font-size: 14px;
 }
