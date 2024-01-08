@@ -6,42 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>devAnderson</title>
   <link rel="stylesheet" href="style.css">
-  <script src="src/client-side.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="main.js" defer></script>
+
   <!--GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <!-- FIM DO GOOGLE FONTES -->
 
   <!-- BOOTSTRAP ICONS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- BOOTSTRAP ICONS -->
+
+  <!-- DEVICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- DEVICONS -->
+
+
+
 </head>
 
 <body>
   <div class="warning">
-    <h2 class="warning-title">Portfólio em desenvolvimento. <i class="bi bi-exclamation-triangle-fill"></i></h2>
+    <h2 class="warning-title">Portfólio em desenvolvimento.</h2>
   </div>
   <header>
     <div class="interface">
       <div class="logo">
         <a href="#">
-          <img src="images/logo.webp" alt="">
+          <h2>DevAnderson{};</h2>
         </a>
       </div><!--logo-->
 
       <nav class="menu-desktop">
         <ul>
           <li><a href="#">Início</a></li>
-          <li><a href="#">Especialidades</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#specialty" id="link-specialty">Especialidades</a></li>
+          <li><a href="#about" id="link-about">Sobre</a></li>
+          <li><a href="#project" id="link-project">Projetos</a></li>
         </ul>
       </nav>
       <div class="btn-contato">
-        <a href="#">
+        <a href="#contact" class="link-contact">
           <button>Contato</button>
         </a>
       </div>
@@ -59,57 +72,66 @@
               ducimus.</p>
 
             <div class="btn-contato">
-              <a href="#">
+              <a href="#contact" class="link-contact">
                 <button>Entre em contato</button>
               </a>
             </div>
           </div><!--txt-topo-site-->
 
           <div class="img-topo-site">
-            <img src="images/pessoa.png" alt="" class="img-pessoa">
+            <img src="images/fotos_pessoais/ANDERSON_09.JPG" alt="" class="img-pessoa">
           </div><!--img-topo-site-->
         </div><!--flex-->
       </div> <!--interface-->
     </section> <!--topo-do-site-->
 
-    <section class="especialidades">
+    <section class="especialidades" id="specialty">
       <div class="interface">
         <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
         <div class="flex">
-          <div class="especialidades-box">
-            <i class="bi bi-code-slash"></i>
-            <h3>Desenvolvimento web</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aperiam quibusdam minus unde ipsa eligendi
-              quidem modi excepturi illo facere corporis ex quas, perspiciatis facilis tempore architecto eaque earum
-              nesciunt.</p>
-          </div>
 
           <div class="especialidades-box">
             <i class="bi bi-laptop"></i>
             <h3>Front-End</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aperiam quibusdam minus unde ipsa eligendi
-              quidem modi excepturi illo facere corporis ex quas, perspiciatis facilis tempore architecto eaque earum
-              nesciunt.</p>
+            <i class="devicon-html5-plain colored" id="icon-languages"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <p>Desenvolvimento proficiente com React para criação de componentes dinâmicos.
+              Design e implementação de layouts elegantes usando CSS e frameworks como Bootstrap.</p>
+
           </div>
+
+          <div class="especialidades-box">
+            <i class="bi bi-code-slash"></i>
+            <h3>Desenvolvimento web</h3>
+            <i class="devicon-javascript-plain colored"></i>
+            <p>Domínio avançado de JavaScript, incluindo ES6+ para desenvolvimento moderno. Implementação de lógica
+              assíncrona utilizando Promises e Async/Await.Integração de APIs para fornecer e consumir dados de forma
+              eficiente.</p>
+          </div>
+
 
           <div class="especialidades-box">
             <i class="bi bi-gear"></i>
             <h3>Back-End</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aperiam quibusdam minus unde ipsa eligendi
-              quidem modi excepturi illo facere corporis ex quas, perspiciatis facilis tempore architecto eaque earum
-              nesciunt.</p>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <p>Desenvolvimento avançado de APIs RESTful com Node.js para atender às necessidades do frontend.
+              Integração de bancos de dados NoSQL, com especialização em MongoDB para armazenamento eficiente e
+              consultas rápidas.</p>
+
           </div>
     </section> <!--especialidades-->
 
-    <section class="sobre">
+    <section class="sobre" id="about">
       <div class="interface">
         <div class="flex">
           <div class="img-sobre">
-            <img src="images/foto.png" alt="" id="img-foto">
+            <img src="images/fotos_pessoais/ANDERSON_08.jpg" alt="" id="img-foto">
           </div> <!--img-sobre-->
 
           <div class="txt-sobre">
-            <h2>MUITO PRAZER, <span>SOU ANDERSON NUNES.</span>
+            <h2>Hello World, <span id="textAnimated"></span>
             </h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quas perferendis porro culpa odio
               doloribus animi, saepe ullam consectetur veritatis excepturi similique fugiat quidem voluptatum adipisci
@@ -117,10 +139,17 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officia, aut consequuntur qui error
               necessitatibus natus. Itaque quibusdam alias in fugit voluptates, pariatur commodi esse, voluptatum dicta
               ab magnam ratione.</p>
+
             <div class="btn-social">
-              <a href=""><button><i class="bi bi-instagram"></i></button></a>
-              <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-              <a href=""><button><i class="bi bi-facebook"></i></button></a>
+              <a href="https://www.instagram.com/andersonnunes.y/" target="_blank"><button><i
+                    class="bi bi-instagram"></i></button></a>
+
+              <a href="https://www.linkedin.com/in/anderson-nunes-988b9023a/" target="_blank"><button><i
+                    class="bi bi-linkedin"></i></button></a>
+
+              <a href="https://drive.google.com/file/d/1qjJBY4h6tlNHfVS7p9zKBSW4p0XIaR_x/view"
+                download="CURRICULO-DEV.pdf" target="_blank"><button><i
+                    class="bi bi-file-earmark-person"></i></button></a>
             </div>
           </div> <!--txt-sobre-->
 
@@ -128,7 +157,7 @@
       </div> <!--interface-->
     </section> <!--sobre-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="project">
       <div class="interface">
         <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
         <div class="flex">
@@ -145,7 +174,7 @@
       </div><!--interface-->
     </section><!--portfolio-->
 
-    <section class="formulario">
+    <section class="formulario" id="contact">
       <div class="interface">
         <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
@@ -167,13 +196,17 @@
     <div class="interface">
       <div class="line-footer">
         <div class="flex">
-          <div class="logo-footer">
-            <img src="images/logo.webp" alt="Logotipo dev anderson">
-          </div> <!-- logo-footer -->
+          <div class="logo">
+            <a href="#">
+              <h2>DevAnderson{};</h2>
+            </a>
+          </div><!--logo-->
           <div class="btn-social">
-            <a href=""><button><i class="bi bi-instagram"></i></button></a>
-            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-            <a href=""><button><i class="bi bi-facebook"></i></button></a>
+            <a href="https://www.instagram.com/andersonnunes.y/" target="_blank"><button><i
+                  class="bi bi-instagram"></i></button></a>
+            <a href="https://www.linkedin.com/in/anderson-nunes-988b9023a/" target="_blank"><button><i
+                  class="bi bi-linkedin"></i></button></a>
+            <a href="" download="CURRICULO-DEV.pdf"><button><i class="bi bi-file-earmark-person"></i></button></a>
           </div> <!--btn-social-->
         </div> <!--flex-->
       </div><!-- line-footer -->
