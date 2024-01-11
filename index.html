@@ -7,7 +7,8 @@
   <title>devAnderson</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-  <script src="main.js" defer></script>
+  <script type="module" src="main.js" defer></script>
+
 
   <!--GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +58,66 @@
         <a href="#contact" class="link-contact">
           <button>Contato</button>
         </a>
+      </div> <!--btn-contato-->
+
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <div class="group-menu-icon">
+                  <span>Início</span>
+                  <i class="bi bi-house-door-fill"></i>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#specialty" class="link-specialty">
+                <div class="group-menu-icon">
+                  <span>Especialidades</span>
+                  <i class="bi bi-journal-medical"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="link-about">
+                <div class="group-menu-icon">
+                  <span>Sobre</span>
+                  <i class="bi bi-person-fill"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#project" class="link-project">
+                <div class="group-menu-icon">
+                  <span>Projetos</span>
+                  <i class="bi bi-clipboard2-data-fill"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="link-contact">
+                <div class="group-menu-icon">
+                  <span>Contato</span>
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div> <!--menu-mobile-->
+
+      <div class="overlay-menu" id="overlay-menu">
+
       </div>
     </div> <!--interface-->
   </header>
@@ -93,9 +154,11 @@
           <div class="especialidades-box">
             <i class="bi bi-laptop"></i>
             <h3>Front-End</h3>
-            <i class="devicon-html5-plain colored" id="icon-languages"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-react-original colored"></i>
+            <div class="icon-group">
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-react-original colored"></i>
+            </div>
             <p>Desenvolvimento proficiente com React para criação de componentes dinâmicos.
               Design e implementação de layouts elegantes usando CSS e frameworks como Bootstrap.</p>
 
@@ -104,7 +167,9 @@
           <div class="especialidades-box">
             <i class="bi bi-code-slash"></i>
             <h3>Desenvolvimento web</h3>
-            <i class="devicon-javascript-plain colored"></i>
+            <div class="icon-group">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
             <p>Domínio avançado de JavaScript, incluindo ES6+ para desenvolvimento moderno. Implementação de lógica
               assíncrona utilizando Promises e Async/Await.Integração de APIs para fornecer e consumir dados de forma
               eficiente.</p>
@@ -114,8 +179,10 @@
           <div class="especialidades-box">
             <i class="bi bi-gear"></i>
             <h3>Back-End</h3>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <div class="icon-group">
+              <i class="devicon-nodejs-plain colored"></i>
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+            </div>
             <p>Desenvolvimento avançado de APIs RESTful com Node.js para atender às necessidades do frontend.
               Integração de bancos de dados NoSQL, com especialização em MongoDB para armazenamento eficiente e
               consultas rápidas.</p>
@@ -127,7 +194,7 @@
       <div class="interface">
         <div class="flex">
           <div class="img-sobre">
-            <img src="images/fotos_pessoais/ANDERSON_08.jpg" alt="" id="img-foto">
+            <img src="images/fotos_pessoais/ANDERSON_08.jpg" alt="foto pessoal" id="img-foto">
           </div> <!--img-sobre-->
 
           <div class="txt-sobre">
@@ -150,6 +217,10 @@
               <a href="https://drive.google.com/file/d/1qjJBY4h6tlNHfVS7p9zKBSW4p0XIaR_x/view"
                 download="CURRICULO-DEV.pdf" target="_blank"><button><i
                     class="bi bi-file-earmark-person"></i></button></a>
+
+              <a href="https://github.com/AndersonN031" target="_blank">
+                <button><i class="bi bi-github"></i></button>
+              </a>
             </div>
           </div> <!--txt-sobre-->
 
@@ -207,6 +278,10 @@
             <a href="https://www.linkedin.com/in/anderson-nunes-988b9023a/" target="_blank"><button><i
                   class="bi bi-linkedin"></i></button></a>
             <a href="" download="CURRICULO-DEV.pdf"><button><i class="bi bi-file-earmark-person"></i></button></a>
+
+            <a href="https://github.com/AndersonN031" target="_blank">
+              <button><i class="bi bi-github"></i></button>
+            </a>
           </div> <!--btn-social-->
         </div> <!--flex-->
       </div><!-- line-footer -->

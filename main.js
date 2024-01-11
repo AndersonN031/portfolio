@@ -1,11 +1,16 @@
+import menuMobile from "./src/menuMobile.js";
+import textAnimated from "./src/textAnimated.js";
+
 // essa função faz com que ao clicar no link "especialidades", role suavemente para a seção "especialidades"
 function scrollIntoSpecialty() {
   document.addEventListener('DOMContentLoaded', function () {
-    let linkSpecialty = document.getElementById('link-specialty');
-    linkSpecialty.addEventListener('click', function (e) {
-      e.preventDefault();
-      let specialtySection = document.getElementById('specialty')
-      specialtySection.scrollIntoView({ behavior: 'smooth' });
+    let linkSpecialty = document.querySelectorAll('.link-specialty');
+    linkSpecialty.forEach((linkSpecialty) => {
+      linkSpecialty.addEventListener('click', (e) => {
+        e.preventDefault();
+        let specialtySection = document.getElementById('specialty')
+        specialtySection.scrollIntoView({ behavior: 'smooth' });
+      })
     });
   })
 }
@@ -13,11 +18,13 @@ function scrollIntoSpecialty() {
 // essa função faz com que ao clicar no link "sobre", role suavemente para a seção "sobre"
 function scrollIntoAbout() {
   document.addEventListener('DOMContentLoaded', function () {
-    let linkAbout = document.getElementById('link-about');
-    linkAbout.addEventListener('click', function (e) {
-      e.preventDefault();
-      let aboutSection = document.getElementById('about')
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    let linkAbout = document.querySelectorAll('.link-about');
+    linkAbout.forEach(function (linkAbout) {
+      linkAbout.addEventListener('click', (e) => {
+        e.preventDefault();
+        let aboutSection = document.getElementById('about')
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      })
     });
   })
 }
@@ -25,11 +32,13 @@ function scrollIntoAbout() {
 // essa função faz com que ao clicar no link "projeto", role suavemente para a seção de "projetos"
 function scrollIntoProject() {
   document.addEventListener('DOMContentLoaded', function () {
-    let linkProject = document.getElementById('link-project');
-    linkProject.addEventListener('click', function (e) {
-      e.preventDefault();
-      let projectSection = document.getElementById('project')
-      projectSection.scrollIntoView({ behavior: 'smooth' });
+    let linkProject = document.querySelectorAll('.link-project');
+    linkProject.forEach(function (linkProject) {
+      linkProject.addEventListener('click', function (e) {
+        e.preventDefault();
+        let projectSection = document.getElementById('project')
+        projectSection.scrollIntoView({ behavior: 'smooth' });
+      })
     });
   })
 }
@@ -56,15 +65,16 @@ scrollIntoProject()
 
 scrollIntoContact()
 
-document.addEventListener('DOMContentLoaded', () => {
-  new TypeIt("#textAnimated", {
-    speed: 100,
-    loop: true,
-    cursor: false
-  }).type("Sou Anderson Nunes", { delay: 1000 }).delete(18).type("Desenvolvedor Web", { delay: 1000 })
+// importando o arquivo menuMobile...
+menuMobile()
 
-    .go()
-})
+// importando o arquivo textAnimated...
+textAnimated()
+
+
+
+
+
 
 
 
