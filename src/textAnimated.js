@@ -4,8 +4,8 @@ export default function textAnimated() {
     new TypeIt("#textAnimated", {
       speed: 100,
       loop: true,
-      cursor: false
-    }).type("Sou Anderson Nunes", { delay: 1000 }).delete(18).type("Desenvolvedor Web", { delay: 1000 })
+      // cursor: false
+    }).type("Desenvolvedor web", { delay: 5000 }).delete(18)
 
       .go()
   })

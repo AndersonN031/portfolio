@@ -1,6 +1,19 @@
 import menuMobile from "./src/menuMobile.js";
 import textAnimated from "./src/textAnimated.js";
 
+function scrollIntoHome() {
+  document.addEventListener('DOMContentLoaded', function () {
+    let linkHome = document.querySelectorAll('.link-home');
+    linkHome.forEach(function (linkHome) {
+      linkHome.addEventListener('click', (e) => {
+        e.preventDefault();
+        let homeSection = document.getElementById('home')
+        homeSection.scrollIntoView({ behavior: 'smooth' });
+      })
+    });
+  })
+}
+
 // essa função faz com que ao clicar no link "especialidades", role suavemente para a seção "especialidades"
 function scrollIntoSpecialty() {
   document.addEventListener('DOMContentLoaded', function () {
@@ -57,6 +70,8 @@ function scrollIntoContact() {
   });
 }
 
+scrollIntoHome()
+
 scrollIntoSpecialty()
 
 scrollIntoAbout()
@@ -64,6 +79,8 @@ scrollIntoAbout()
 scrollIntoProject()
 
 scrollIntoContact()
+
+
 
 // importando o arquivo menuMobile...
 menuMobile()

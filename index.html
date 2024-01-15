@@ -35,23 +35,20 @@
 </head>
 
 <body>
-  <div class="warning">
-    <h2 class="warning-title">Portfólio em desenvolvimento.</h2>
-  </div>
   <header>
     <div class="interface">
       <div class="logo">
-        <a href="#">
-          <h2>DevAnderson{};</h2>
+        <a href="#home" class="link-home">
+          <h2><span>/*</span>A.N DEV<span>*/</span></h2>
         </a>
       </div><!--logo-->
 
       <nav class="menu-desktop">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#specialty" id="link-specialty">Especialidades</a></li>
-          <li><a href="#about" id="link-about">Sobre</a></li>
-          <li><a href="#project" id="link-project">Projetos</a></li>
+          <li><a href="#home" class="link-home">Início</a></li>
+          <li><a href="#about" class="link-about">Sobre</a></li>
+          <li><a href="#specialty" class="link-specialty">Habilidades</a></li>
+          <li><a href="#project" class="link-project">Projetos</a></li>
         </ul>
       </nav>
       <div class="btn-contato">
@@ -72,7 +69,7 @@
         <nav>
           <ul>
             <li>
-              <a href="#">
+              <a href="#home" class="link-home">
                 <div class="group-menu-icon">
                   <span>Início</span>
                   <i class="bi bi-house-door-fill"></i>
@@ -81,14 +78,6 @@
             </li>
 
             <li>
-              <a href="#specialty" class="link-specialty">
-                <div class="group-menu-icon">
-                  <span>Especialidades</span>
-                  <i class="bi bi-journal-medical"></i>
-                </div>
-              </a>
-            </li>
-            <li>
               <a href="#about" class="link-about">
                 <div class="group-menu-icon">
                   <span>Sobre</span>
@@ -96,6 +85,16 @@
                 </div>
               </a>
             </li>
+            <li>
+
+              <a href="#specialty" class="link-specialty">
+                <div class="group-menu-icon">
+                  <span>Habilidades</span>
+                  <i class="bi bi-journal-medical"></i>
+                </div>
+              </a>
+            </li>
+
             <li>
               <a href="#project" class="link-project">
                 <div class="group-menu-icon">
@@ -123,124 +122,166 @@
   </header>
 
   <main>
-    <section class="topo-do-site">
+    <section class="topo-do-site" id="home">
       <div class="interface">
         <div class="flex">
           <div class="txt-topo-site">
-            <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque, fuga facilis iste laboriosam at
-              doloremque modi corrupti commodi, sequi eveniet ducimus necessitatibus! Ad ea atque odio, culpa fuga
-              ducimus.</p>
+            <!-- <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1> -->
 
-            <div class="btn-contato">
-              <a href="#contact" class="link-contact">
-                <button>Entre em contato</button>
-              </a>
+            <div class="texto-do-topo">
+              <p>Hello World. Eu sou</p>
+              <h1>Anderson Nunes<br><span id="textAnimated"></span></h1>
             </div>
-          </div><!--txt-topo-site-->
-
-          <div class="img-topo-site">
-            <img src="images/fotos_pessoais/ANDERSON_09.JPG" alt="" class="img-pessoa">
-          </div><!--img-topo-site-->
-        </div><!--flex-->
-      </div> <!--interface-->
-    </section> <!--topo-do-site-->
-
-    <section class="especialidades" id="specialty">
-      <div class="interface">
-        <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
-        <div class="flex">
-
-          <div class="especialidades-box">
-            <i class="bi bi-laptop"></i>
-            <h3>Front-End</h3>
-            <div class="icon-group">
-              <i class="devicon-html5-plain colored"></i>
-              <i class="devicon-css3-plain colored"></i>
-              <i class="devicon-react-original colored"></i>
-            </div>
-            <p>Desenvolvimento proficiente com React para criação de componentes dinâmicos.
-              Design e implementação de layouts elegantes usando CSS e frameworks como Bootstrap.</p>
-
-          </div>
-
-          <div class="especialidades-box">
-            <i class="bi bi-code-slash"></i>
-            <h3>Desenvolvimento web</h3>
-            <div class="icon-group">
-              <i class="devicon-javascript-plain colored"></i>
-            </div>
-            <p>Domínio avançado de JavaScript, incluindo ES6+ para desenvolvimento moderno. Implementação de lógica
-              assíncrona utilizando Promises e Async/Await.Integração de APIs para fornecer e consumir dados de forma
-              eficiente.</p>
-          </div>
-
-
-          <div class="especialidades-box">
-            <i class="bi bi-gear"></i>
-            <h3>Back-End</h3>
-            <div class="icon-group">
-              <i class="devicon-nodejs-plain colored"></i>
-              <i class="devicon-mongodb-plain-wordmark colored"></i>
-            </div>
-            <p>Desenvolvimento avançado de APIs RESTful com Node.js para atender às necessidades do frontend.
-              Integração de bancos de dados NoSQL, com especialização em MongoDB para armazenamento eficiente e
-              consultas rápidas.</p>
-
-          </div>
-    </section> <!--especialidades-->
-
-    <section class="sobre" id="about">
-      <div class="interface">
-        <div class="flex">
-          <div class="img-sobre">
-            <img src="images/fotos_pessoais/ANDERSON_08.jpg" alt="foto pessoal" id="img-foto">
-          </div> <!--img-sobre-->
-
-          <div class="txt-sobre">
-            <h2>Hello World, <span id="textAnimated"></span>
-            </h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quas perferendis porro culpa odio
-              doloribus animi, saepe ullam consectetur veritatis excepturi similique fugiat quidem voluptatum adipisci
-              cumque quod nesciunt enim.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officia, aut consequuntur qui error
-              necessitatibus natus. Itaque quibusdam alias in fugit voluptates, pariatur commodi esse, voluptatum dicta
-              ab magnam ratione.</p>
 
             <div class="btn-social">
-              <a href="https://www.instagram.com/andersonnunes.y/" target="_blank"><button><i
+              <a href="https://www.instagram.com/andersonnunes.y/" target="_blank" rel="noopener noreferrer"><button><i
                     class="bi bi-instagram"></i></button></a>
 
               <a href="https://www.linkedin.com/in/anderson-nunes-988b9023a/" target="_blank"><button><i
                     class="bi bi-linkedin"></i></button></a>
 
-              <a href="https://drive.google.com/file/d/1qjJBY4h6tlNHfVS7p9zKBSW4p0XIaR_x/view"
-                download="CURRICULO-DEV.pdf" target="_blank"><button><i
-                    class="bi bi-file-earmark-person"></i></button></a>
-
               <a href="https://github.com/AndersonN031" target="_blank">
                 <button><i class="bi bi-github"></i></button>
               </a>
             </div>
-          </div> <!--txt-sobre-->
+          </div><!--txt-topo-site-->
 
-        </div> <!--flex-->
+          <div class="img-topo-site">
+            <i class="devicon-react-original colored"></i>
+          </div><!--img-topo-site-->
+        </div><!--flex-->
+      </div> <!--interface-->
+    </section> <!--topo-do-site-->
+
+    <section class="sobre" id="about">
+      <div class="interface">
+
+        <h2 class="titulo"><span><i class="bi bi-list-nested"></i></span> Sobre mim <span><i
+              class="bi bi-list-nested"></i></span></h2>
+        <div class="flex">
+
+
+
+          <div class="img-sobre">
+            <img src="images/fotos_pessoais/ANDERSON_08.jpg" alt="foto pessoal" id="img-foto">
+          </div> <!--img-sobre-->
+
+          <div class="txt-sobre">
+            <p>Meu nome é Anderson Nunes, e como desenvolvedor web full-stack, tenho paixão por transformar ideias em
+              soluções. Com objetivo em criar sites e aplicativos que atendam às necessidades e também interajam de
+              forma eficiente.</p>
+
+            <p>Atualmente focando em desenvolvimento web full-stack.</p>
+
+
+          </div>
+        </div> <!--txt-sobre-->
+
+      </div> <!--flex-->
       </div> <!--interface-->
     </section> <!--sobre-->
 
+    <section class="especialidades" id="specialty">
+      <div class="interface">
+        <h2 class="titulo"><span><i class="bi bi-list-nested"></i></span> Habilidades <span><i
+              class="bi bi-list-nested"></i></span></h2>
+        <div class="flex">
+
+          <div class="grupo-de-icones-um">
+            <div class="grupo-icone-e-nome"><i class="devicon-html5-plain colored"></i>
+              <p>Html</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-css3-plain colored"></i>
+              <p>Css</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-react-original colored"></i>
+              <p>React</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-javascript-plain colored"></i>
+              <p>Javascript</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-typescript-plain colored"></i>
+              <p>Typescript</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-nodejs-plain colored"></i>
+              <p>Nodejs</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-git-plain"></i>
+              <p>Git</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-github-original colored"></i>
+              <p>Github</p>
+            </div>
+
+            <div class="grupo-icone-e-nome">
+              <i class="devicon-npm-original-wordmark"></i>
+              <p>NPM</p>
+            </div>
+          </div>
+
+        </div>
+    </section> <!--especialidades-->
+
+
     <section class="portfolio" id="project">
       <div class="interface">
-        <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+        <h2 class="titulo"><i class="bi bi-list-nested"></i> Projetos <i class="bi bi-list-nested"></i></h2>
         <div class="flex">
-          <div class="img-port" style="background-image: url(images/imagem.jpg);">
-            <div class="overlay">Projeto 1 (Em breve)</div>
+          <div class="img-portfolio">
+            <img src="images/portfolio-image.jpg" alt="banner do portfolio">
+
+            <div class="txt-img">
+              <h2>Website pessoal</h2>
+              <p>Site pessoal, criado para mostrar meu perfil, habilidades e projetos. Também um bom lugar para testar
+                novas tecnologias.
+              </p>
+
+              <p class="title-tech">Html, Css e Javascript</p>
+
+              <div class="link-projetos">
+                <a href="https://github.com/AndersonN031/portfolio" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://andersonn031.github.io/portfolio/">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="img-port" style="background-image: url(images/imagem.jpg);">
-            <div class="overlay">Projeto 2 (Em breve)</div>
+
+          <div class="img-portfolio-dois">
+            <img src="images/dashboard-image.jpg" alt="foto do dashboard">
+
+            <div class="txt-img">
+              <h2>Gestor de estoque</h2>
+              <p>Gestor de estoque, esse projeto contém um dashboard para gerenciar os produtos adicionados, removidos
+                ou atualizados.</p>
+
+              <p class="title-tech">ReactJs, Javascript</p>
+
+              <div class="link-projetos">
+                <a href="https://github.com/AndersonN031/gestao-de-estoque" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="img-port" style="background-image: url(images/imagem.jpg);">
-            <div class="overlay">Projeto 3 (Em breve)</div>
-          </div>
+
         </div><!--flex-->
       </div><!--interface-->
     </section><!--portfolio-->
@@ -268,16 +309,15 @@
       <div class="line-footer">
         <div class="flex">
           <div class="logo">
-            <a href="#">
-              <h2>DevAnderson{};</h2>
+            <a href="#home" class="link-home">
+              <h2><span>/*</span>A.N DEV<span>*/</span></h2>
             </a>
           </div><!--logo-->
           <div class="btn-social">
-            <a href="https://www.instagram.com/andersonnunes.y/" target="_blank"><button><i
+            <a href="https://www.instagram.com/andersonnunes.y/" target="_blank" rel="noopener noreferrer"><button><i
                   class="bi bi-instagram"></i></button></a>
             <a href="https://www.linkedin.com/in/anderson-nunes-988b9023a/" target="_blank"><button><i
                   class="bi bi-linkedin"></i></button></a>
-            <a href="" download="CURRICULO-DEV.pdf"><button><i class="bi bi-file-earmark-person"></i></button></a>
 
             <a href="https://github.com/AndersonN031" target="_blank">
               <button><i class="bi bi-github"></i></button>
