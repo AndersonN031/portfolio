@@ -404,8 +404,8 @@ section.portfolio {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 20px 4%;
-  box-shadow: 0 0 40px 10px #ffffff1d;
+  padding: 200px 4%;
+
 }
 
 section.portfolio .flex {
@@ -501,6 +501,12 @@ section.portfolio .img-portfolio-dois .link-projetos a i:hover {
 
 section.formulario {
   padding: 80px 4%;
+  background-color: #141414;
+}
+
+section.formulario .titulo,
+section.formulario span {
+  font-family: "Fira Code", monospace;
 }
 
 form {
@@ -513,6 +519,8 @@ form {
   margin-top: 40px;
 }
 
+
+
 form input,
 form textarea {
   width: 100%;
@@ -523,6 +531,7 @@ form textarea {
   border-radius: 15px;
   color: #fff;
   font-size: 18px;
+  font-family: "Fira Code", monospace;
 }
 
 form textarea {
@@ -554,7 +563,6 @@ form .btn-enviar input:hover {
 
 footer {
   padding: 40px 4%;
-  box-shadow: 0 0 40px #ffffff1d;
 }
 
 footer .flex {
