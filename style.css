@@ -221,7 +221,7 @@ header nav ul li a:hover {
 }
 
 section.topo-do-site {
-  padding: 210px 4%;
+  padding: 346px 4%;
 }
 
 section.topo-do-site .flex {
@@ -334,7 +334,7 @@ section .grupo-de-icones-um .grupo-icone-e-nome p {
 }
 
 section.sobre {
-  padding: 150px 4%;
+  padding: 250px 4%;
   border-radius: 15px;
   color: #ffffff;
   background-color: #141414;
@@ -498,6 +498,9 @@ section.portfolio .img-portfolio-dois .link-projetos a i:hover {
   color: #578EC9;
 }
 
+section.portfolio .img-portfolio span {
+  color: gold;
+}
 
 /* ESTILO DE FORMULARIO DE CONTATO */
 
@@ -609,6 +612,15 @@ footer .copyright p {
   font-style: italic;
   font-size: 14px;
 }
+
+
+@media only screen and (max-width: 1280px) {
+  section.topo-do-site {
+    padding: 217px 4%;
+  }
+
+}
+
 
 @media only screen and (max-width: 1020px) {
 
