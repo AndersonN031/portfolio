@@ -498,10 +498,17 @@ section.portfolio .img-portfolio-dois .link-projetos a i:hover {
   color: #578EC9;
 }
 
-section.portfolio .img-portfolio span {
+
+.img-portfolio .span-e {
+  color: #fff;
+}
+
+.img-portfolio .span-freela {
   color: gold;
 }
 
+
+rgba(255, 217, 0, 0.308)
 /* ESTILO DE FORMULARIO DE CONTATO */
 
 section.formulario {
@@ -611,6 +618,14 @@ footer .line-footer p {
 footer .copyright p {
   font-style: italic;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 1370px) {
+  .portfolio .interface .flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
 }
 
 
