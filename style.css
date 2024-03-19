@@ -507,8 +507,10 @@ section.portfolio .img-portfolio-dois .link-projetos a i:hover {
   color: gold;
 }
 
+section.portfolio .img-portfolio .link-projetos .icon i {
+  color: gold;
+}
 
-rgba(255, 217, 0, 0.308)
 /* ESTILO DE FORMULARIO DE CONTATO */
 
 section.formulario {
@@ -732,6 +734,12 @@ footer .copyright p {
   /* PORTFÓLIO */
   section.portfolio {
     padding: 80px 8%;
+  }
+
+  .portfolio .interface .flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
   }
 
   .img-port {
