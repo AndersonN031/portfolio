@@ -316,7 +316,7 @@ section .grupo-de-icones-um .grupo-icone-e-nome:hover {
 }
 
 section .grupo-de-icones-um .grupo-icone-e-nome i {
-  color: #fff;
+  /* color: #fff; */
 }
 
 section .grupo-de-icones-um .grupo-icone-e-nome p {
