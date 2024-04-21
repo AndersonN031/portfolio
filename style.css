@@ -315,9 +315,6 @@ section .grupo-de-icones-um .grupo-icone-e-nome:hover {
   box-shadow: 0 0 10px #578EC9;
 }
 
-section .grupo-de-icones-um .grupo-icone-e-nome i {
-  /* color: #fff; */
-}
 
 section .grupo-de-icones-um .grupo-icone-e-nome p {
   color: #fff;
@@ -330,7 +327,12 @@ section .grupo-de-icones-um .grupo-icone-e-nome p {
   border-radius: 50%;
   object-fit: cover;
   /* crie um box shadow com efeito de luz */
-  box-shadow: 0 0 40px #578EC9;
+  box-shadow: 0 0 30px #000;
+}
+
+.topo-do-site .img-topo-site img {
+  box-shadow: 0 0 30px #fff;
+
 }
 
 section.sobre {
